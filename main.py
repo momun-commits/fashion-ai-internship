@@ -32,18 +32,18 @@ async def generate_fashion(request:FashionRequest):
     job_id= str(uuid.uuid4())
     jobs[job_id]={"status":"processing","result": None}
 
-    #call AI to generate fashion description
-    #client=anthropic.Anthropic()
-   # message=client.messages.create(
-        # model="claude-sonnet-4-20250514",
-        #max_tokens=1000,
-        #messages=[
-           # {
-          #      "role": "user",
-         #       "content": f"Describe a {request.color} {request.garment_type} in {request.style} style. Be specific about design details, fabric, and styling in 3 sentences."
-        #    }
-       # ]
-      #  )
+#call AI to generate fashion description
+#client=anthropic.Anthropic()
+# message=client.messages.create(
+# model="claude-sonnet-4-20250514",
+#max_tokens=1000,
+#messages=[
+# {
+#      "role": "user",
+#       "content": f"Describe a {request.color} {request.garment_type} in {request.style} style. Be specific about design details, fabric, and styling in 3 sentences."
+#    }
+# ]
+#  )
 
        # temporary mock
     season_text = f"for {request.season}" if request.season else ""
