@@ -1,77 +1,82 @@
-# Fashion AI Design System
+# AI Fashion Design Generator
 
 ## Overview
 
-This project explores AI-assisted fashion design workflows using image generation, prompt engineering, CLIP evaluation, and style-control techniques.
+AI Fashion Design Generator is an intelligent fashion generation system that combines prompt engineering, ControlNet, CLIP evaluation, semantic retrieval, and brand-aware style generation.
 
-The system generates fashion product images from text prompts and evaluates image-text alignment using CLIP scores.
+## Features
 
----
+### Week 1
 
-## Technologies Used
+* Fashion dataset exploration
+* Dataset preprocessing
+
+### Week 2
+
+* Prompt engineering
+* Stable Diffusion image generation
+* CLIP similarity evaluation
+
+### Week 3
+
+* ControlNet integration
+* Sketch-to-design generation
+* Pose-guided generation
+* Depth-guided generation
+* Controlled vs uncontrolled comparison
+
+### Week 4
+
+* Brand-aware prompt generation
+* Multiple fashion brand styles
+* Luxury, athletic and casual fashion presets
+* CLIP quality evaluation
+
+### Week 5
+
+* Fashion knowledge base
+* Sentence Transformer embeddings
+* ChromaDB vector storage
+* Semantic similarity search
+* Intelligent fashion recommendations
+
+## Tech Stack
 
 * Python
 * Hugging Face Inference API
 * FLUX.1-schnell
-* OpenCV
-* Transformers
+* Sentence Transformers
+* ChromaDB
 * CLIP
-* PIL
+* ControlNet
+* Stable Diffusion
 
----
+## Project Structure
 
-## Week 1: Data & Embeddings
+```
+fashion/
+│
+├── image_generator.py
+├── prompt_builder.py
+├── clip_scorer.py
+├── embeddings.py
+├── vector_store.py
+├── controlnet_demo.py
+├── sketch_extractor.py
+├── fashion_data.py
+├── generated_jacket_navy.png
+├── controlled.png
+├── uncontrolled.png
+├── README.md
+├── week3_report.md
+├── week4_report.md
+└── week5_report.md
+```
 
-* Fashion data exploration
-* Embedding generation
-* Vector storage concepts
+## Future Improvements
 
----
-
-## Week 2: Image Generation & Evaluation
-
-* Fashion image generation using FLUX
-* Prompt engineering
-* CLIP-based image evaluation
-
----
-
-## Week 3: Style Control & Workflow Exploration
-
-### Implemented
-
-* Sketch extraction using OpenCV
-* Depth map extraction
-* Pose map extraction
-* Controlled image generation
-* CLIP-based comparison
-
-### Results
-
-| Method        | CLIP Score |
-| ------------- | ---------: |
-| Uncontrolled  |      22.80 |
-| Controlled    |      30.14 |
-| Sketch-guided |      25.79 |
-| Depth-guided  |      27.84 |
-| Pose-guided   |      31.38 |
-
-Best result: **Pose-guided generation (31.38)**
-
----
-
-## Project Files
-
-* `controlnet_demo.py`
-* `sketch_extractor.py`
-* `week3_comparison.py`
-* `clip_scorer.py`
-
----
-
-## Future Work
-
-* Full ControlNet integration
-* Fashion sketch conditioning
-* ControlNet fine-tuning on fashion datasets
-* Real-time designer workflow support
+* LoRA fine-tuning on custom fashion datasets
+* Larger fashion recommendation database
+* User wardrobe personalization
+* Interactive Gradio interface
+* Trend forecasting module
